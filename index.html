@@ -2,10 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=homepage.html">
     <title>Redirecting...</title>
+    <style>
+        body {
+            font-family: cursive;
+            text-align: center;
+            padding-top: 100px;
+            background-color: lightpink; /* Soft pink */
+        }
+        .fade-out {
+            animation: fadeOut 8s ease forwards;
+        }
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
-<body>
+<body class="fade-out"> <!-- Apply the fade-out class to the body -->
+    <p>Good Things are Loading, please wait...</p>
     <p>If you are not redirected automatically, <a href="homepage.html">click here</a>.</p>
+    <script>
+        setTimeout(function() {
+            window.location.href = "homepage.html"; // Redirect to homepage after 3 seconds
+        }, 8000); // Adjusted delay to 3 seconds
+    </script>
 </body>
 </html>
