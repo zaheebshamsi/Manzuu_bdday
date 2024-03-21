@@ -30,9 +30,54 @@ document.addEventListener("DOMContentLoaded", function() {
                     balloon.remove(); // Remove the balloon from the DOM
                 }
             }, 50); // Adjust the interval for smoother fading
-        }, 100000); // 8000 milliseconds = 8 seconds
+        }, 10000); // 8000 milliseconds = 8 seconds
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const confettiContainer = document.querySelector('.confetti-container');
+    const colors = ['#f44336', '#2196F3', '#FFEB3B', '#4CAF50', '#FF9800']; // Define colors for confetti
+
+    setInterval(createConfetti, 100); // Create confetti at intervals
+
+    function createConfetti() {
+        const confetti = document.createElement('div');
+        confetti.classList.add('confetti');
+
+        const size = Math.random() * 10 + 5; // Randomize size of confetti
+        confetti.style.width = `${size}px`;
+        confetti.style.height = `${size}px`;
+
+        const color = colors[Math.floor(Math.random() * colors.length)]; // Randomize color
+        confetti.style.backgroundColor = color;
+
+        const x = Math.random() * window.innerWidth; // Randomize horizontal position
+        const y = -10; // Start confetti from top of viewport
+        confetti.style.left = `${x}px`;
+        confetti.style.top = `${y}px`;
+
+        confettiContainer.appendChild(confetti);
+
+        // Animation to move confetti downwards
+        confetti.animate([
+            { transform: `translate(${x}px, ${y}px)` },
+            { transform: `translate(${x}px, ${window.innerHeight}px)` }
+        ], {
+            duration: Math.random() * 3000 + 2000, // Randomize animation duration
+            easing: 'ease-out',
+            fill: 'forwards'
+        });
+
+        // Remove confetti after animation ends
+        confetti.addEventListener('animationend', () => {
+            confetti.remove();
+        });
+    }
+});
+
+
+
 
 
 // Function to append text after 3 seconds
