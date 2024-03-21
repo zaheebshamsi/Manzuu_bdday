@@ -1,0 +1,158 @@
+/* Ribbon */
+.ribbon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'Monotype Corsiva', serif; /* Apply the romantic font */
+    background-color: deeppink; /* Soft pink */
+    color: #ffffff; /* White text */
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000; /* Ensure the ribbon appears on top of other content */
+}
+
+/* Optional: Add styles to make it look like a ribbon */
+.ribbon::before,
+.ribbon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  border-style: solid;
+  z-index: -1;
+}
+
+/* Positioning the "tail" of the ribbon */
+.ribbon::before {
+  left: -10px;
+  border-width: 0 10px 10px 0;
+  border-color: transparent #ffcc00 transparent transparent;
+}
+
+/* Positioning the "fold" of the ribbon */
+.ribbon::after {
+  right: -10px;
+  border-width: 10px 10px 0 0;
+  border-color: #ffcc00 transparent transparent transparent;
+}
+
+/*------------------------------------------------------------------------*/
+
+.images-parent{
+    display: inline-block;
+    vertical-align: top; /* Align images to the top */
+    margin: 0 10px 0 210px; /* Adjust margin as needed */
+}
+
+.manzuu-image2 {
+    clip: rect(200px, 200px, 200px, 220px); /* Clipping rectangle: top, right, bottom, left */
+    object-fit: cover;
+}
+
+
+/*------------------------------------------------------------------------*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    /*height: 20vh;*/
+    background-color: #f3e5f5; /* Lavender blush */
+    color: #4a148c; /* Dark purple text */
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #ba68c8; /* Lavender purple */
+    color: #fff;
+    margin-top: 62px;
+    margin-left: 7px;
+    border-radius: 1%;
+    font-family: 'Great Vibes', cursive; /* Apply the romantic font */
+    font-size: 25px;
+    text-align: center;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+}
+
+.sidebar ul li a {
+  color: #ffffff; /* White text */
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  background-color: #9575cd; /* Light purple */
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff; /* White */
+    color: #4a148c; /* Dark purple text */
+}
+
+/*------------------------------------------------------------------------*/
+
+.birthday-container {
+    position: relative;
+    margin-top: 100px; /* Adjust as needed */
+    text-align: center;
+    background-color: #fff; /* White */
+}
+
+.birthday-message {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #880e4f; /* Deep pink */
+    font-family: 'Great Vibes', cursive; /* Apply the romantic font */
+}
+
+.balloons {
+    position: relative;
+}
+
+
+.balloon {
+    position: relative; /* Change position to relative */
+    width: 40px; /* Adjust balloon width */
+    height: 60px; /* Adjust balloon height */
+    background-color: #ffb3e6; /* Soft pink */
+    border-radius: 50%;
+    animation: float 8s infinite alternate; /* Floating animation */
+}
+
+.string {
+    position: absolute;
+    bottom: 0;
+    width: 2px; /* Adjust string width */
+    height: 150px; /* Adjust string height */
+    background-color: #000; /* Black string */
+    left: 50%; /* Position string in the middle of the balloon */
+    transform: translate(-50%, 100%); /* Move string to bottom of the balloon */
+    z-index: -1; /* Ensure string stays behind the balloon */
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-1000px);
+    }
+}
+
+.futuristic-elements {
+    /* Add styles for futuristic elements */
+}
