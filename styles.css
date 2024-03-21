@@ -40,15 +40,20 @@
 
 /*------------------------------------------------------------------------*/
 
-.images-parent{
+.images-parent {
     display: inline-block;
-    vertical-align: top; /* Align images to the top */
-    margin: 0 10px 0 210px; /* Adjust margin as needed */
+    vertical-align: top;
+    margin: 0 10px 0 110px;
 }
 
-.manzuu-image2 {
-    clip: rect(200px, 200px, 200px, 220px); /* Clipping rectangle: top, right, bottom, left */
+.images-parent img {
+    clip: rect(200px, 200px, 200px, 220px);
     object-fit: cover;
+    border-radius: 500px;
+}
+
+.images-parent .manzuu-image2 {
+    margin-top: 30px;
 }
 
 
@@ -59,10 +64,11 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
+
     /*align-items: center;*/
     /*justify-content: center;*/
     /*height: 20vh;*/
-    background-color: #f3e5f5; /* Lavender blush */
+    background-color: hsl(270, 42%, 90%); /* Lavender blush */
     color: #4a148c; /* Dark purple text */
 }
 
@@ -113,7 +119,7 @@ body {
 }
 
 .birthday-message {
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 20px;
     color: #880e4f; /* Deep pink */
     font-family: 'Great Vibes', cursive; /* Apply the romantic font */
@@ -132,6 +138,7 @@ body {
     border-radius: 50%;
     animation: float 8s infinite alternate; /* Floating animation */
 }
+
 
 .string {
     position: absolute;
