@@ -70,6 +70,7 @@ body {
     /*height: 20vh;*/
     background-color: hsl(270, 42%, 90%); /* Lavender blush */
     color: #4a148c; /* Dark purple text */
+    padding: 0;
 }
 
 .sidebar {
@@ -82,6 +83,7 @@ body {
     font-family: 'Great Vibes', cursive; /* Apply the romantic font */
     font-size: 25px;
     text-align: center;
+    z-index: 1;
 }
 
 .sidebar ul {
@@ -162,4 +164,17 @@ body {
 
 .futuristic-elements {
     /* Add styles for futuristic elements */
+}
+
+
+/*------------------------------------------------------------------------*/
+
+
+.confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the confetti is behind other content */
 }
