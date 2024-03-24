@@ -1,44 +1,27 @@
-<div class="container">
-    <div class="sidebar">
-        <ul>
-            <li><a href="about_us.html">&rarr; About Us</a></li>
-            <li><a href="memories.html">&rarr; Memories</a></li>
-        </ul>
-    </div>
-    <div class="content">
-        <!-- Main content goes here -->
-    </div>
-    <div class="images">
-        <img src="images/img1.png" alt="Description of the image">
-        <img src="images/img2.jpg" alt="Description of the image">
-    </div>
-</div>
 <style>
-    .container {
-    display: flex;
+@import url('http://fonts.cdnfonts.com/css/magic-brush');
+#kygo {
+  font-family: 'Magic Brush', sans-serif;
+  font-size: 250px;
+  background: -webkit-linear-gradient(45deg, #a5f9b3, #66deef);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  animation: 3s reveal-text;
 }
 
-.sidebar {
-    width: 200px;
-    background-color: #ba68c8;
-    color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-}
+@keyframes reveal-text {
+  0% {
+    -webkit-clip-path: polygon(0 0, 10% 0, 10% 0, 0 0);
+clip-path: polygon(0 0, 10% 0, 10% 0, 0 0);
+  }
+100% {
+   -webkit-clip-path: polygon(0 100%, 10% 100%, 10% 0, 0 0);
+clip-path: polygon(0 100%, 10% 100%, 10% 0, 0 0);
+  }
 
-.content {
-    flex: 1;
-    padding: 20px;
 }
-
-.images {
-    width: 200px; /* Adjust width as needed */
-    padding: 20px;
-}
-
-.images img {
-    display: block;
-    margin-bottom: 10px; /* Adjust margin between images */
-}
-
 </style>
+
+<div id="kygo">I love you</div>
