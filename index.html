@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+    <style>
+        body {
+            font-family: cursive;
+            text-align: center;
+            padding-top: 100px;
+            background-color: lightpink; /* Soft pink */
+        }
+        .fade-out {
+            animation: fadeOut 8s ease forwards;
+            font-family: 'Great Vibes', cursive; /* Apply the romantic font */
+        }
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+        p {
+            font-weight: bold;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body class="fade-out"> <!-- Apply the fade-out class to the body -->
+    <p>Good Things are Loading, please wait...</p>
+    <p>If you are not redirected automatically, <a href="homepage.html">click here</a>.</p>
+    <script>
+        setTimeout(function() {
+            window.location.href = "homepage.html"; // Redirect to homepage after 3 seconds
+        }, 8000); // Adjusted delay to 3 seconds
+    </script>
+</body>
+</html>
