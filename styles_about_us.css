@@ -1,5 +1,3 @@
-@import url('http://fonts.cdnfonts.com/css/magic-brush');
-
 /* Body and general styles */
 * {
     margin: 0;
@@ -21,44 +19,40 @@ body {
     font-family: 'Great Vibes', cursive;
     background-color: #7e57c2; /* Deep purple */
     color: #fff;
-    font-size: 24px;
-    padding: 10px 0; /* Add some padding for better spacing */
+    font-size: 4vh; /* Adjust font size using vh */
+    padding: 2vh 0; /* Add some padding using vh for better spacing */
     text-align: center; /* Center-align the text */
 }
 
 /* Text Header */
 .text-header {
     position: absolute;
-    top: 10%;
-    left: 36%;
+    top: 10vh; /* Adjust position using vh */
+    left: 20%; /* Adjust position using percentages */
     background-color: #ffb3e6;
     font-family: 'Great Vibes', cursive;
-    font-size: 24px;
-    border-radius: 30px;
-    padding: 10px; /* Add padding for better spacing */
+    font-size: 4vh; /* Adjust font size using vh */
+    border-radius: 2vh; /* Adjust border radius using vh */
+    padding: 2vh; /* Add padding using vh for better spacing */
 }
 
 /* Text Area 1 */
 .text-area1 {
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    font-family: 'Satisfy', cursive;
-    font-size: 3vh;
+    position: relative; /* Change to relative positioning */
+    margin-top: 20vh; /* Adjust margin using vh */
     width: 80%; /* Adjust the width as needed */
-    padding: 20px; /* Add padding for better spacing */
+    padding: 5vh; /* Add padding using vh for better spacing */
     line-height: 1.6; /* Increase line-height for better readability */
+    font-family: 'Satisfy', cursive;
 }
 
 /* Text Area 2 */
 .text-area2 {
-    position: absolute;
-    top: 125%;
-    left: 10%;
-    font-family: 'Satisfy', cursive;
-    font-size: 3.2vh;
-    color: #880e3f; /* Deep pink */
+    position: relative; /* Change to relative positioning */
+    margin-top: 10vh; /* Adjust margin using vh */
     width: 80%; /* Adjust the width as needed */
-    padding: 20px; /* Add padding for better spacing */
+    padding: 5vh; /* Add padding using vh for better spacing */
     line-height: 1.6; /* Increase line-height for better readability */
+    color: #880e3f; /* Deep pink */
+    font-family: 'Satisfy', cursive;
 }
