@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3e5f5; /* Lavender */
+    color: #333;
+}
+
+header, main, footer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: black; /* Lavender */
+    font-family: 'Allura', sans-serif;
+}
+
+header {
+    margin-top: -150px;
+}
+
+h1, h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+/* Paragraph inside Header */
+header p {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #4a148c;; /* Example color */
+    font-weight: bold;
+
+}
+
+/* Paragraph inside Photo Grid */
+.photo p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0; /* Initially hidden */
+    /* Add specific styles for paragraph inside photo grid here */
+    color: blue; /* Example color */
+    font-weight: bold;
+}
+
+/* Month-wise Sections */
+.month-section {
+    margin-bottom: 40px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+.photo:hover p {
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #7e57c2; /* Deep purple */
+    color: #fff;
+}
+
+footer p {
+    margin: 0 0 10vh;
+}
+
+
+#back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #7e57c2; /* Deep purple */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#back-to-top-btn:hover {
+    background-color: #9575cd; /* Light purple */
+}
