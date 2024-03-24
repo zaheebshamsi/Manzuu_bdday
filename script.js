@@ -97,3 +97,25 @@ function appendText() {
 setTimeout(appendText, 2000); // 2000 milliseconds = 2 seconds
 
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    var backToTopButton = document.getElementById('back-to-top-btn');
+
+    // Show the button when user scrolls down
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+
+    // Scroll to the top when button is clicked
+    backToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
+

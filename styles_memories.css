@@ -93,11 +93,28 @@ header p {
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     background-color: #7e57c2; /* Deep purple */
     color: #fff;
 }
 
 footer p {
     margin: 0 0 10vh;
+}
+
+
+#back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #7e57c2; /* Deep purple */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#back-to-top-btn:hover {
+    background-color: #9575cd; /* Light purple */
 }
