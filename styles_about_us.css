@@ -34,6 +34,7 @@ body {
     font-size: 4vh; /* Adjust font size using vh */
     border-radius: 2vh; /* Adjust border radius using vh */
     padding: 2vh; /* Add padding using vh for better spacing */
+    border: 2px solid black; /* 2px width solid black border */
 }
 
 /* Text Area 1 */
@@ -44,6 +45,8 @@ body {
     padding: 5vh; /* Add padding using vh for better spacing */
     line-height: 1.6; /* Increase line-height for better readability */
     font-family: 'Satisfy', cursive;
+    border: 2px solid black; /* 2px width solid black border */
+    margin-left: 3vh;
 }
 
 /* Text Area 2 */
@@ -55,4 +58,7 @@ body {
     line-height: 1.6; /* Increase line-height for better readability */
     color: #880e3f; /* Deep pink */
     font-family: 'Satisfy', cursive;
+    border: 2px solid brown; /* 2px width solid black border */
+    margin-left: 3vh;
+
 }
