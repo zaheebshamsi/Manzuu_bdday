@@ -45,20 +45,20 @@ header p {
 }
 
 /* Paragraph inside Photo Grid */
-.photo p {
-    position: absolute;
+.photo-grid .photo-home p {
+
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
+    /*background-color: rgba(255, 255, 255, 0.8);*/
     padding: 10px;
     margin: 0;
-    font-size: 14px;
+    font-size: 34px;
     line-height: 1.4;
-    transition: opacity 0.3s ease-in-out;
-    opacity: 0; /* Initially hidden */
+    /*transition: opacity 0.3s ease-in-out;*/
+    opacity: 1; /* Initially hidden */
     /* Add specific styles for paragraph inside photo grid here */
-    color: blue; /* Example color */
+    /*color: darkblue; !* Example color *!*/
     font-weight: bold;
 }
 
